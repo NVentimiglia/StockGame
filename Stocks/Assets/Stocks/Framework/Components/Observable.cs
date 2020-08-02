@@ -34,6 +34,12 @@ namespace Framework
     public class ObservableString : Observable<string> { }
 
     [Serializable]
+    public class ObservableDateTime : Observable<DateTime> { }
+
+    [Serializable]
+    public class ObservableTimeSpan : Observable<TimeSpan> { }
+
+    [Serializable]
     public class ObservableFloat : Observable<float> { }
 
     [Serializable]

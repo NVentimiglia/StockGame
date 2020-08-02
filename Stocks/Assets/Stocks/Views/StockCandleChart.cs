@@ -112,6 +112,8 @@ namespace Stocks.Views
 
             var x = XSpace * model.Period;
             var y = PriceToY(model.Low);
+            (view.transform as RectTransform).anchorMin = new Vector2(0, 0);
+            (view.transform as RectTransform).anchorMax = new Vector2(0, 0);
             (view.transform as RectTransform).anchoredPosition = new Vector3(x, y);
 
             //wick size

@@ -13,6 +13,7 @@ namespace Stocks.Services
     {
         public List<StockBarData> Bars { get; private set; }
         public int Period { get; private set; }
+        public TimeSpan PeriodRemaining { get { return TimeSpan.FromSeconds(PeriodLength - delta); } }
         public int BidPrice => Mathf.Max(1, Last - Spread); // Sell Price
         public int AskPrice => Mathf.Max(1, Last + Spread); // Buy Price
         public int Last { get; private set; }

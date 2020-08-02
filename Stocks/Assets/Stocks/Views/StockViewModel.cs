@@ -18,6 +18,7 @@ namespace Stocks.Views
 
         public ObservableInt CashValue;
         public ObservableInt Period;
+        public ObservableTimeSpan PeriodRemaining;
         public ObservableInt StockCount;
         public ObservableInt StockValue;
         public ObservableInt TotalValue;
@@ -53,6 +54,7 @@ namespace Stocks.Views
             Low.Set(Service.Low);
             HighVolume.Set(Service.HighVolume);
             LowVolume.Set(Service.LowVolume);
+            PeriodRemaining.Set(Service.PeriodRemaining);
         }
 
         public void Buy()

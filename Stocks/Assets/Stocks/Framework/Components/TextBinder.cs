@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 namespace Framework.Components
@@ -37,9 +38,45 @@ namespace Framework.Components
             }
         }
 
+        public void UpdateText(DateTime value)
+        {
+            if (value == null)
+            {
+                Target.text = string.Empty;
+            }
+            else if (string.IsNullOrEmpty(FormatOption))
+            {
+                Target.text = value.ToString();
+            }
+            else
+            {
+                Target.text = string.Format(FormatOption, value);
+            }
+        }
+
+        public void UpdateText(TimeSpan value)
+        {
+            if (value == null)
+            {
+                Target.text = string.Empty;
+            }
+            else if (string.IsNullOrEmpty(FormatOption))
+            {
+                Target.text = value.ToString();
+            }
+            else
+            {
+                Target.text = string.Format(FormatOption, value);
+            }
+        }
+
         public void UpdateText(object value)
         {
-            if (string.IsNullOrEmpty(FormatOption))
+            if(value == null)
+            {
+                Target.text = string.Empty;
+            }
+            else if (string.IsNullOrEmpty(FormatOption))
             {
                 Target.text = value.ToString();
             }

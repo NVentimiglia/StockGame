@@ -60,6 +60,7 @@ namespace Stocks.Models
         // History
         List<StockBarData> Bars { get; }
         int Period { get; }
+        TimeSpan PeriodRemaining { get; }
 
         // Quotes
         int BidPrice { get; }
