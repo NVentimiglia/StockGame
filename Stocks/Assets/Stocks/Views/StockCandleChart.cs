@@ -1,9 +1,7 @@
 ﻿using DG.Tweening;
-using DG.Tweening.Core;
 using Framework;
 using Framework.Components;
 using Stocks.Models;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -73,6 +71,16 @@ namespace Stocks.Views
 
         public void UpdateData(StockBarData model)
         {
+            if(model.High > High)
+            {
+                UpdateHigh(model.High);
+            }
+
+            if(model.Low < Low)
+            {
+                UpdateLow(model.Low);
+            }
+
             if (_bars.Count > 0)
             {
                 var last = _bars[_bars.Count - 1];

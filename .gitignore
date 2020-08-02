@@ -1,1 +1,6 @@
 Stocks/Library/
+Stocks/Temp/
+Stocks/obj/
+Stocks/Logs/
+Stocks/Packages/
+Stocks.Assembly-CSharp.csproj.user

@@ -36,7 +36,6 @@ namespace Stocks.Views
         {
             Service = DependencyService.Get<IStockService>();
             Name.Set("/ES");
-
             StockData.Set(this);
         }
 
@@ -55,6 +54,7 @@ namespace Stocks.Views
             HighVolume.Set(Service.HighVolume);
             LowVolume.Set(Service.LowVolume);
             PeriodRemaining.Set(Service.PeriodRemaining);
+            Period.Set(Service.Period);
         }
 
         public void Buy()
@@ -65,11 +65,6 @@ namespace Stocks.Views
         public void Sell()
         {
             Service.Sell();
-        }
-
-        private void LateUpdate()
-        {
-            Period.Set(Service.Period);
         }
 
         public IEnumerable<StockBarData> Get()
