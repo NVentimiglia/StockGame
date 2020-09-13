@@ -6,6 +6,10 @@ namespace Stocks.Models
     /// <summary>
     /// Data Service
     /// </summary>
+    /// <remarks>
+    /// This service should  be chopped up into multiple services / models
+    /// I did not for simplicity sake.
+    /// </remarks>
     public interface IStockService
     {
         // History
