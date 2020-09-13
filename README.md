@@ -22,13 +22,13 @@ The Architecture is MVVM (Model-View-ViewModel). Required framework code resides
 Initialization script. Wires dependent services for the scene.
 
 #### MockStockService
-Business Logic Layer. Hidden behind the IStockService facade, as this implementation is designed to be swapped out.
+Business Logic Layer. Logic is hidden behind the IStockService facade, because the implementation is designed to be swapped out.
 
 #### StockViewModel
-Binding source for the views. All visual elements connect to this script.
+Binding / data source for the views. All visual elements connect to this script.
 
 #### Varius Charts / Views
-Responsible for displaying part of the UI. All connect to the StockViewModel as a datasource.
+Responsible for displaying parts of the UI. All connect to the StockViewModel as a datasource. Designed to be reused (ViewModel agnostic).
 
 ### UML
 
