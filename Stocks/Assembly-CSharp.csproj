@@ -98,6 +98,7 @@
     <Compile Include="Assets\Stocks\Framework\Services\EventService2.cs" />
     <Compile Include="Assets\Stocks\Framework\Services\UpdateService.cs" />
     <Compile Include="Assets\Stocks\Models\IStockService.cs" />
+    <Compile Include="Assets\Stocks\Models\StockBarData.cs" />
     <Compile Include="Assets\Stocks\Services\MockStockService.cs" />
     <Compile Include="Assets\Stocks\Services\RollingWindow.cs" />
     <Compile Include="Assets\Stocks\Views\StockCandleChart.cs" />

@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace Stocks.Views
 {
+    /// <summary>
+    /// Horizontal bar chart of volume candles
+    /// </summary>
     [ExecutionOrder(ExecutionOrderAttribute.DEFAULT_4)]
     public class StockVolumeChart : MonoBehaviour
     {

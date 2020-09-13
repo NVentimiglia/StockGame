@@ -45,11 +45,17 @@ namespace Framework
     [Serializable]
     public class ObservableAction : Observable<Action> { }
 
+    /// <summary>
+    ///  Allows for multiple list views to bind to a shared data source
+    /// </summary>
     [Serializable]
     public class ObservableStream<T> : Observable<IStream<T>>
     { 
     }
 
+    /// <summary>
+    /// Contract for data source for ObservableStream
+    /// </summary>
     public interface IStream<T>
     {
         IEnumerable<T> Get();

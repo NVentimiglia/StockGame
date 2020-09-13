@@ -6,8 +6,9 @@ using UnityEngine;
 
 namespace Stocks.Services
 {
-
-
+    /// <summary>
+    /// Game Logic
+    /// </summary>
     [ExecutionOrder(ExecutionOrderAttribute.SERVICE_2)]
     public class MockStockService : MonoBehaviour, IStockService
     {

@@ -9,6 +9,9 @@ namespace Stocks.Views
     [Serializable]
     public class ObservableStockBarData : ObservableStream<StockBarData> { }
 
+    /// <summary>
+    /// View Entry Point
+    /// </summary>
     [ExecutionOrder(ExecutionOrderAttribute.DEFAULT_4)]
     public class StockViewModel : MonoBehaviour, IStream<StockBarData>
     {

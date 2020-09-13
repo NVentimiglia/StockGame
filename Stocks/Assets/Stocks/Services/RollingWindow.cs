@@ -1,5 +1,8 @@
 ﻿namespace Stocks.Services
 {
+    /// <summary>
+    /// Allows for the averaging of a set of values
+    /// </summary>
     public class RollingWindow
     {
         public int Index;

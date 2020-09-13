@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 namespace Stocks.Views
 {
+    /// <summary>
+    /// Candle chart item
+    /// </summary>
     [ExecutionOrder(ExecutionOrderAttribute.DEFAULT_4)]
     public class StockCandleChartBar : MonoBehaviour
     {
